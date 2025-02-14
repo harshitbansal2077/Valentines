@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #ffccd5;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #d6336c;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            display: inline-block; /* This is the fix */
+            animation: heartbeat 1s infinite ease-in-out;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .yes {
+            background: #28a745;
+            color: white;
+        }
+        .no {
+            background: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine? ❤️</h1>
+        <p>Ehehe press yess, or you will regret the moments we can spend and miss them...😏</p>
+        <span class="heart">❤️</span>
+        <br>
+        <button class="button yes" onclick="alert('Meoww!! I love you! ❤️')">Yes</button>
+        <button class="button no" onclick="alert('Wrong choice...press yess..( •̀ ω •́ )✧')">No</button>
+    </div>
+</body>
+</html>
